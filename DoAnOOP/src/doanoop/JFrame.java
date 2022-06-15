@@ -19,14 +19,14 @@ public class JFrame extends javax.swing.JFrame {
     /**
      * Creates new form JFrame
      */
-    private String []images = {"1.png","2.png"};
+    private String []images = {"1.png","2.png","3.png"};
     public JFrame() {
         initComponents();
         Timer timer;
         timer = new Timer(1000,new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int n = (int) Math.floor(Math.random()*2);
+                int n = (int) Math.floor(Math.random()*3);
                 String image = images[n];
                 lbText.setIcon(new ImageIcon("src\\" + image));
             }
