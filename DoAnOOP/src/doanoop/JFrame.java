@@ -29,6 +29,7 @@ public class JFrame extends javax.swing.JFrame {
                 int n = (int) Math.floor(Math.random()*3);
                 String image = images[n];
                 lbText.setIcon(new ImageIcon("src\\" + image));
+                //lbText.setLocation(lbText.getLocation().x, lbText.getLocation().y -1);
             }
         });
         timer.start();
